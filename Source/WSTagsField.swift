@@ -27,6 +27,13 @@ open class WSTagsField: UIScrollView {
         }
     }
 
+    /// Tint color for text field
+    open var textFieldTintColor: UIColor! {
+        didSet {
+            textField.tintColor = textFieldTintColor
+        }
+    }
+
     /// Text color for tag view in normal (non-selected) state.
     open var textColor: UIColor? {
         didSet {
