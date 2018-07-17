@@ -286,7 +286,7 @@ open class WSTagsField: UIScrollView {
     }
 
     deinit {
-        if ProcessInfo.processInfo.operatingSystemVersion.majorVersion < 11, let observer = layerBoundsObserver {
+        if let observer = layerBoundsObserver {
             removeObserver(observer, forKeyPath: "layer.bounds")
         }
     }
