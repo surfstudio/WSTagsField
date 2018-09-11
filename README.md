@@ -116,7 +116,7 @@ Download all the source files and drop them into your project.
 ## Requirements
 
 * iOS 8.0+
-* Xcode 9 (Swift 4.0)
+* Xcode 10 (Swift 4.2)
 
 # Contributing
 
