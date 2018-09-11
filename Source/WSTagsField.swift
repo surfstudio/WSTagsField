@@ -543,7 +543,6 @@ extension WSTagsField {
         set { textField.text = newValue }
     }
 
-    @available(iOS, unavailable)
     override open var inputAccessoryView: UIView? {
         return super.inputAccessoryView
     }
@@ -718,9 +717,9 @@ extension WSTagsField {
     }
 
     private func attributedPlaceholder() -> NSAttributedString {
-        var attributes: [NSAttributedStringKey: Any]?
+        var attributes: [NSAttributedString.Key: Any]?
         if let placeholderColor = placeholderColor {
-            attributes = [NSAttributedStringKey.foregroundColor: placeholderColor]
+            attributes = [NSAttributedString.Key.foregroundColor: placeholderColor]
         }
         return NSAttributedString(string: placeholder, attributes: attributes)
     }
